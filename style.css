@@ -7,14 +7,48 @@
     display: flex;
     justify-content: center;
 }
+.footer{
+  height: 200px;
+  background: #000;
+}
 .header img{
-    opacity: 1;
+  opacity: 1;
+}
+.infblock{
+  height: 250px;
+  width: 400px;
+  background: #000000;
+  margin-top: -100px;
+  border: solid 20px black;
+  border-radius: 15px;
+  opacity: 1;
 
+}
+.infblock:hover{
+  transform: scale(1.020);
+        
+        box-shadow: 0 0 3px 3px  rgb(255, 255, 255);
+        transition: 0.5s;
+}
+
+.infconteiner{
+  width: 100%;
+  height: 350px;
+  background: #ffffff;
+  position:absolute;
+  bottom: 0;
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
 }
 .bg_img{
     width: 100%;
     height: 1080px;
     background: #ffffff url("images\\1.jpg") ;
+    position: relative;
+    
 }
 body{
     margin: 0px;
@@ -23,11 +57,9 @@ body{
 }
 
 html{
-    background: #ffffff ;
-		background-size: 100%;
-		background-attachment: fixed; /* Фон страницы фиксируется */
-		background-repeat: repeat-y; /* Изображение повторяется по горизонтали */
-        background-repeat: repeat-x;
+  background: #ffffff ;
+  background-size: 100%;
+		
 }
 .preloader {
   /*фиксированное позиционирование*/
@@ -47,55 +79,41 @@ html{
 }
 
 .preloader__row {
-  
-  
-  
-  width: 775px;
-  height: 750px;
-  
   text-align: center;
-  animation: preloader-rotate 2s infinite linear;
+  animation: preloader-rotate 2.5s infinite linear;
 }
 
 .preloader__item {
   
-  top: 0;
-  
-  
-  width: 775px;
-  height: 750px;
-  animation: preloader-bounce 2s infinite ease-in-out;
+  animation: preloader-bounce 2.5s infinite linear ;
 }
 
-.preloader__item:last-child {
-  top: auto;
-  bottom: 0;
-  animation-delay: -1s;
-}
+
 
 @keyframes preloader-rotate {
   100% {
     transform: rotatey(360deg);
+    margin-bottom: 950px;
   }
 }
 
 @keyframes preloader-bounce {
-
-  0%,
-  100% {
-    transform: scale(0.5);
-  }
-
-  50% {
-    transform: scale(1);
+  100%{
+    transform: scale(0.13333);
   }
 }
 
 .loaded_hiding .preloader {
-  transition: 0.3s opacity;
+  transition: 0.5s opacity;
   opacity: 0;
 }
 
 .loaded .preloader {
   display: none;
 }
+
+
+
+
+
+
