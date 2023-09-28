@@ -1,4 +1,4 @@
-window.onload = setTimeout(x,2000);
+window.onload = setTimeout(x,2700);
 function x() {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
