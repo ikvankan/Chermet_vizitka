@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vizitka</title>
-</head>
-<link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+</head>
+
 <body>
     <div class="preloader">
         <ul class="circles">
@@ -29,28 +32,50 @@
         </div>
     </div>
 
-<div class="bg_img" >
-    <div class="header">
-        <img src="images\logo.jpg">
-    </div>
-    <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <div class="infconteiner">
-        <div class="infblock"></div>
-        <div class="infblock"></div>
-        <div class="infblock"></div>
-    </div>
-</div >
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+            
+          <div class="carousel-item active">
+            <img src="images\1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images\2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+        <div class="header">
+            <img src="images\logo.jpg">
+        </div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="infconteiner">
+            <div class="infblock"></div>
+            <div class="infblock"></div>
+            <div class="infblock"></div>
+        </div>
+      </div>
+
+
+
     
     <div class="footer">
         подвал да да
