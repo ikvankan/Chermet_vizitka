@@ -14,6 +14,9 @@
   height: 200px;
   background: #000;
 }
+.carousel-caption{
+  margin-bottom: 500px;
+}
 .carousel-control-prev,
 .carousel-control-next{
   width: 100px;
