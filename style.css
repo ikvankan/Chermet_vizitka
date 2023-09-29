@@ -2,8 +2,8 @@
     height: 100px;
     margin: 0px;
     display: flex;
-    opacity: 0.9;
-    background:linear-gradient(to left, #ffffff, #4e54c8) ;
+    
+    background:linear-gradient(to left, #e0e2c3ce, #dfbc71ce) ;
     justify-content: center;
     align-items: center;
 }
@@ -13,9 +13,10 @@
 }
 .header img{
   opacity: 1;
-  height: 60px;
-  border: solid 1px rgb(0, 0, 0);
+  width: 500px;
+  border: solid 10px black;
   border-radius: 100%;
+  scale: 0.12;
 }
 .infblock{
   height: 250px;
@@ -37,7 +38,7 @@
 .infconteiner{
   width: 100%;
   height: 350px;
-  background:linear-gradient(to left, #ffffff, #4e54c8) ;
+  background:linear-gradient(to left, #e0e2c3, #dfbc71) ;
   position:absolute;
   bottom: 0;
   opacity: 0.75;
@@ -81,7 +82,7 @@ html{
   justify-content: center;
   align-items: center;
    
-    background: linear-gradient(to left, #ffffff, #4e54c8) ;
+    background: linear-gradient(to left, #e0e2c3, #dfbc71) ;
 }
 
 .preloader__row {
@@ -108,12 +109,12 @@ margin-bottom: 0px;
   }
   75%{
     transform: rotatey(0deg);
-    margin-bottom: 870px;
+    margin-bottom: 875px;
     
   }
   100%{
     transform: rotatey(360deg);
-    margin-bottom: 870px;
+    margin-bottom: 875px;
   }
 }
 
@@ -311,7 +312,7 @@ body{
 .preloader__item::before {
   content: '';
   position: absolute;
-  border: 50px solid #ffffff69;
+  border: 50px solid #ffffffd7;
   left: -100px;
   opacity: 0;
   right: -100px;
