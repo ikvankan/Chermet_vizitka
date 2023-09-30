@@ -38,11 +38,13 @@
 .infblock{
   height: 80%;
   width: 25%;
-  background: #000000;
-  margin-top: -5%;
-  border: solid 20px black;
+  background: #00000000;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
-  opacity: 1;
+  
 
 }
 .infblock:hover{
@@ -55,10 +57,9 @@
 .infconteiner{
   width: 100%;
   height: 35%;
-  background:linear-gradient(to left, #e0e2c3, #dfbc71) ;
+  background:linear-gradient(to left, #e0e2c3ce, #dfbc71ce) ;
   position:absolute;
   bottom: 0;
-  opacity: 0.75;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -146,12 +147,6 @@ margin-bottom: 0px;
   }
 }
 
-
-  
-    
-  
-
-
 .loaded_hiding .preloader {
   transition: 0.5s opacity;
   opacity: 0;
@@ -166,12 +161,9 @@ margin-bottom: 0px;
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
+
 
 body{
     font-family: 'Exo', sans-serif;
@@ -342,4 +334,67 @@ body{
     transform: scale(30);
     opacity: 0;
 }
+}
+
+.animate_block{
+  animation: up 0.5s ease-in-out; 
+  animation-fill-mode: forwards;
+}
+@keyframes up{
+  0%{
+    background-color: rgba(0, 0, 0, 0);
+    scale: 0.5;
+    opacity: 0;
+    
+  }
+  100%{
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: -5%;
+    scale:1;
+    opacity: 1;
+    
+  }
+}
+
+@keyframes slide_men{
+  0%{
+    background: url("images\\men_1.jpg");
+    background-size: cover;
+    width: 80%;
+  height: 80%;
+  }
+  25%{
+    background: url("images\\men_2.jpg");
+    background-size: cover;
+    width: 80%;
+  height: 80%;
+  }
+  50%{
+    background: url("images\\men_3.jpg");
+    background-size: cover;
+    width: 80%;
+  height: 80%;
+  }
+  75%{
+    background: url("images\\men_4.jpg");
+    background-size: cover;
+    width: 80%;
+  height: 80%;
+  }
+  100%{
+    background: url("images\\men_1.jpg");
+    background-size: cover;
+    width: 80%;
+  height: 80%;
+  }
+}
+.img_block{
+  animation: slide_men 10s linear infinite;
+  width: 80%;
+  height: 80%;
+  border-radius: 7.5px;
+  visibility: hidden;
+}
+.ht{
+  visibility: visible;
 }
