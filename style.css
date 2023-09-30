@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0px;
     display: flex;
-    position: absolute;
+    position: fixed;
     top:0;
     z-index: 10;
     background:linear-gradient(to left, #e0e2c3ce, #dfbc71ce) ;
@@ -15,15 +15,18 @@
   background: #000;
 }
 .carousel-caption{
-  margin-bottom: 500px;
+  margin-bottom: 30%;
 }
 .carousel-control-prev,
 .carousel-control-next{
-  width: 100px;
+  width: 4%;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon{
-  margin-bottom: 200px;
+  border-radius: 50%;
+  border: solid 5px #000000;
+  background-color: #000000;
+  
 }
 .header img{
   opacity: 1;
@@ -33,10 +36,10 @@
   scale: 0.12;
 }
 .infblock{
-  height: 250px;
-  width: 400px;
+  height: 80%;
+  width: 25%;
   background: #000000;
-  margin-top: -100px;
+  margin-top: -5%;
   border: solid 20px black;
   border-radius: 15px;
   opacity: 1;
@@ -51,7 +54,7 @@
 
 .infconteiner{
   width: 100%;
-  height: 350px;
+  height: 35%;
   background:linear-gradient(to left, #e0e2c3, #dfbc71) ;
   position:absolute;
   bottom: 0;
@@ -61,29 +64,22 @@
   justify-content: space-between;
   justify-content: space-around;
 }
-.bg_img{
-    width: 100%;
-    height: 1080px;
-    background: #ffffff url("images\\2.jpg") ;
-    position: relative;
-    
-    
-}
 #carouselExampleControls{
   position: relative;
   width: 100%;
-    height: 1080px;
+  
 }
 body{
     margin: 0px;
     height: 100%;
     width: 100%;
+    
 }
 
 html{
   background: #ffffff ;
   background-size: 100%;
-		
+  
 }
 .preloader {
   /*фиксированное позиционирование*/
@@ -94,14 +90,12 @@ html{
   right: 0;
   bottom: 0;
   /* фоновый цвет элемента */
-  
+  background: linear-gradient(to left, #e0e2c3, #dfbc71) ;
   /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
   z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: center;
-   
-    background: linear-gradient(to left, #e0e2c3, #dfbc71) ;
 }
 
 .preloader__row {
@@ -322,11 +316,6 @@ body{
     }
 
 }
-
-
-
-
-
 .preloader__item::after,
 .preloader__item::before {
   content: '';
@@ -341,9 +330,6 @@ body{
   animation: pulse 1s linear ;
   animation-delay: 2.5s;
 }
-
-
-
 @keyframes pulse {
   0% {
     transform: scale(1);
