@@ -30,7 +30,7 @@
   left: 0;
 }
 .animate_line{
-  animation: line_go 2s cubic-bezier(1, 0.1, 0.31, 0.57);
+  animation: line_go 2s cubic-bezier(0.71, 0.04, 0.26, 0.95);
   animation-fill-mode: forwards;
 }
 @keyframes line_go{
