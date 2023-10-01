@@ -16,7 +16,7 @@ function loadImg(i){
       }
   }
   if(images.length == i) // adding class 'loaded' when all images finished with loading
-      document.getElementsByClassName("slider")[0].classList.add("loaded");
+      document.getElementsByClassName("img_block")[0].classList.add("loaded");
 }
 loadImg(0);
 function x() {
