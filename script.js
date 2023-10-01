@@ -35,8 +35,10 @@ setTimeout(() => {
 }, 3100);
 setTimeout(() => {
   document.getElementById("block2").classList.add('animate_block')
+  document.getElementById("img_block2").classList.add('ht');
 }, 3200);
 setTimeout(() => {
   document.getElementById("block3").classList.add('animate_block')
+  document.getElementById("img_block3").classList.add('ht');
 }, 3300);
   }

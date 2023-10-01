@@ -1,17 +1,17 @@
-.header{
-    height: 100px;
+.header {
+    height: 5vw;
     width: 100%;
     margin: 0px;
     display: flex;
     position: fixed;
     top:0;
     z-index: 10;
-    background:linear-gradient(to left, #e0e2c3ce, #dfbc71ce) ;
+    background:linear-gradient(to left, #e0e2c3ce, #dfbc71ce);
     justify-content: center;
-    align-items: center;
+    
 }
 .footer{
-  height: 200px;
+  height: 20%;
   background: #000;
 }
 .carousel-caption{
@@ -30,10 +30,12 @@
 }
 .header img{
   opacity: 1;
-  width: 500px;
-  border: solid 10px black;
+  width: 4vw;
+  height: 4vw;
+  border: solid 1px black;
   border-radius: 100%;
-  scale: 0.12;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 .infblock{
   height: 80%;
@@ -96,11 +98,10 @@ html{
   z-index: 1001;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .preloader__row {
-  text-align: center;
+  margin-top: 25vw;
   animation: preloader-rotate 2.5s linear;
   animation-fill-mode: forwards;
 }
@@ -111,39 +112,42 @@ html{
   animation-fill-mode: forwards;
 }
 .preloader__item img{
-  border: solid 10px black;
+  border: solid 1px black;
   border-radius: 100%;
-  width: 500px;
+  width: 4vw;
+  height: 4vw;
+  opacity: 1;
+  
 }
 
 
 @keyframes preloader-rotate {
   50%{
-margin-bottom: 0px;
+    margin-top: 25vw;
   }
   75%{
     transform: rotatey(0deg);
-    margin-bottom: 875px;
+    margin-top: 0.5vw;
     
   }
   100%{
     transform: rotatey(360deg);
-    margin-bottom: 875px;
+    margin-top: 0.5vw;
   }
 }
 
 @keyframes preloader-bounce {
   50%{
-    transform: scale(1);
+    transform: scale(10);
   }
   75%{
-    transform: scale(0.12);
+    transform: scale(1);
   }
   80%{
-    transform: scale(0.3);
+    transform: scale(2);
   }
   100%{
-    transform: scale(0.12);
+    transform: scale(1);
   }
 }
 
@@ -412,4 +416,16 @@ body{
 }
 .ht{
   visibility: visible;
+}
+.text_block{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 14px;
+  color: rgba(0, 0, 0, 0);
+}
+.text_block:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
