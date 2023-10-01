@@ -36,6 +36,8 @@ setTimeout(() => {
 setTimeout(() => {
   document.getElementById("block2").classList.add('animate_block')
   document.getElementById("img_block2").classList.add('ht');
+  document.getElementById("line1").classList.add("animate_line");
+  document.getElementById("line2").classList.add("animate_line");
 }, 3200);
 setTimeout(() => {
   document.getElementById("block3").classList.add('animate_block')
