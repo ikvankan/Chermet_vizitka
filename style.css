@@ -12,10 +12,14 @@
 }
 .option_block{
   width: 48vw;
+  height: 5vw;
   position: relative;
 }
 .nav_block{
   height: 2.4vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 #line1{
   height: 0.2vw;
@@ -190,43 +194,13 @@ html{
 .loaded .preloader {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-body{
-    font-family: 'Exo', sans-serif;
-}
-
-
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
-
-
-
 .circles{
     position: absolute;
-    top: 100px;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
+    
     overflow: hidden;
 }
 
@@ -450,4 +424,96 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
   transition: 0.3s;
+}
+
+
+
+
+
+
+.dropbtn {
+  color: white;
+  font-size: 1vw;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+  height: 100%;
+  width: 12vw;
+  text-align: center;
+  
+}
+
+.dropdown-content {
+  display: flex;
+  position: absolute;
+  background:linear-gradient(to left, #383333f1, #000000f1) ;
+  opacity: 0;
+  width: 12vw;
+  height: 7vw;
+  
+  font-size: 1vw;
+  visibility: hidden;
+  /* align-content: center; */
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /* width: 70%; */
+}
+.link{
+  position: relative;
+}
+.link::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #dfbc71;
+  transition: .3s;
+}
+
+.link.center:after {
+  left: 50%;
+  transform: translate(-50%);
+}
+.link:hover:after {
+  width: 80%;
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.dropdown:hover .dropbtn::after {
+  width: 80%;
+}
+.dropbtn::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #dfbc71;
+  transition: .3s;
+}
+
+.dropbtn.center:after {
+  left: 50%;
+  transform: translate(-50%);
 }
