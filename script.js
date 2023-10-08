@@ -1,6 +1,5 @@
-window.onload = function() {window.scroll(0,0)}
-window.onload = setTimeout(x,2700);
 var images = [
+  "images\\logo.jpg",
   "images\\men_1.jpg",
   "images\\men_2.jpg",
   "images\\men_3.jpg",
@@ -19,8 +18,9 @@ function loadImg(i){
       document.getElementsByClassName("img_block")[0].classList.add("loaded");
 }
 loadImg(0);
+window.onload = setTimeout(x,2700);
+
 function x() {
-  window.scroll(0,0);
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
       document.body.classList.add('loaded');
@@ -55,9 +55,33 @@ setTimeout(() => {
         document.querySelector('.square-wrapper').classList.add('wrapper-moveL');
       return; // если класс добавлен, продолжать уже не надо
       }
-      // перемещение завершено, теперь надо удалить класс
-      square.classList.remove('square-animation');
-      document.querySelector('.square-wrapper').classList.remove('wrapper-moveL');
+      
     });
   });
   observer.observe(document.querySelector('.square-wrapper'));
+
+  const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square2 = entry.target.querySelector('.square2');
+      
+      if (entry.isIntersecting) {
+        square2.classList.add('square-animation2');
+        document.querySelector('.square-wrapper2').classList.add('wrapper-moveR');
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  observer2.observe(document.querySelector('.square-wrapper2'));
+
+  $(document).ready(function(){
+        $('.dropdown a').click(function(){
+            /*задали какой мы хотим отступ от верха страницы*/
+            const vw = window.innerWidth / 100;
+            $('body,html').animate({
+            /*получили положение элемента вычли отступ и прокрутили*/
+              scrollTop: $($(this).attr('href')).offset().top-5*vw
+            });
+        });
+    });
+    
