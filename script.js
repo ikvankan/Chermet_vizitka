@@ -45,7 +45,7 @@ setTimeout(() => {
 }, 3300);
   }
 
-
+//jpg animations
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const square = entry.target.querySelector('.square');
@@ -73,7 +73,57 @@ setTimeout(() => {
     });
   });
   observer2.observe(document.querySelector('.square-wrapper2'));
+//line animations
 
+
+
+
+  const lineobserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver.observe(document.querySelector('.line'));
+
+
+  const lineobserver2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line2').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver2.observe(document.querySelector('.line2'));
+
+
+  const lineobserver3 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line3').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver3.observe(document.querySelector('.line3'));
+
+
+//scroll
   $(document).ready(function(){
         $('.dropdown a').click(function(){
             /*задали какой мы хотим отступ от верха страницы*/

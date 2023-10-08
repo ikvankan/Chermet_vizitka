@@ -531,7 +531,22 @@ html{
   height: 50vw;
   background: #dfbc71;
 }
-
+.punktimark{
+  width: 100%;
+  height: 5vw;  
+  text-align: center;
+  color: #dfbc71;
+  font-size: 3vw;
+  background: linear-gradient(to left, #383333, #000000) ;
+  
+}
+.punkti{
+  height: 50vw;
+  background: linear-gradient(to left, #383333, #000000) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .square-wrapper{
   width:32vw;
@@ -715,23 +730,28 @@ background-size: cover;
     height: 19vw;
   }
   .line{
-    width: 100%;
+    width: 0;
+    margin-left: 50%;
     height: 0.2vw ;
     background: #dfbc71;
   }
   .line2{
-    width: 100%;
+    width: 0;
+    margin-left: 50%;
     height: 0.2vw ;
-    background: #ffffff;
+    background: #dfbc71;
   }
   .line3{
-    width: 100%;
+    width: 0;
+    margin-left: 50%;
     height: 0.2vw ;
     background: #000000;
   }
+  
   .name_block_onas{
     width: 100%;
     height: 5vw;
+    
     text-align: center;
     color: #dfbc71;
     font-size: 3vw;
@@ -749,4 +769,15 @@ br{
 hr{
   margin-top: 1vw;
   margin-bottom: 1vw;
+}
+.animate_line2{
+  animation: line_go2 2s cubic-bezier(0.71, 0.04, 0.26, 0.95);
+  animation-fill-mode: forwards;
+}
+@keyframes line_go2{
+  
+  100%{
+    width: 100%;
+    margin-left: 0;
+  }
 }
