@@ -742,3 +742,11 @@ background-size: cover;
     margin-bottom: 0;
     padding-left: 1.2vw;
 }
+br{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+hr{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
