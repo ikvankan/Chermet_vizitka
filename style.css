@@ -46,7 +46,7 @@
   }
 }
 .footer{
-  height: 20%;
+  height: 500px;
   background: #000;
 }
 .carousel-caption{
@@ -87,7 +87,7 @@
 .infblock:hover{
   transform: scale(1.020);
         
-        box-shadow: 0 0 3px 3px  rgb(255, 255, 255);
+        box-shadow: 0 0 3px 3px  #dfbc71;
         transition: 0.5s;
 }
 
@@ -111,14 +111,13 @@ body{
     margin: 0px;
     height: 100%;
     width: 100%;
-    
+    background: #000;
+}
+html{
+  min-height: 100%;
 }
 
-html{
-  background: #ffffff ;
-  background-size: 100%;
-  
-}
+
 .preloader {
   /*фиксированное позиционирование*/
   position: fixed;
@@ -458,7 +457,7 @@ html{
   background:linear-gradient(to left, #383333f1, #000000f1) ;
   opacity: 0;
   width: 12vw;
-  height: 7vw;
+  height: 10vw;
   
   font-size: 1vw;
   visibility: hidden;
@@ -517,3 +516,62 @@ html{
   left: 50%;
   transform: translate(-50%);
 }
+.stolovaya{
+  height: 50vw;
+  background: #ffffff;
+}
+.aboutUS{
+  height: 50vw;
+  background: black;
+  position: relative;
+}
+.history{
+  height: 50vw;
+  background: #dfbc71;
+}
+
+
+.square-wrapper{
+  width:32vw;
+  height: 19vw;
+  position: absolute;
+  right: -32vw;
+}
+.wrapper-moveL{
+  animation: wrapperanimL 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes wrapperanimL{
+  50%{
+    right: 10vh;
+  }
+  100%{
+    right: 5vh;
+    
+  }
+}
+.square {
+  
+background: url("images\\1.jpg");
+border-radius: 8px;
+border: solid 3px #dfbc71;
+background-size: cover;
+}
+
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0);
+    
+  }
+  100% {
+    transform: scale(1);
+    
+  }
+}
+
+  .square-animation{
+    animation: wipe-enter 1s 1;
+    width: 100%;
+    height: 100%;
+  }

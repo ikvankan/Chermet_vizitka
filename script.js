@@ -44,3 +44,20 @@ setTimeout(() => {
   document.getElementById("img_block3").classList.add('ht');
 }, 3300);
   }
+
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.square');
+      
+      if (entry.isIntersecting) {
+        square.classList.add('square-animation');
+        document.querySelector('.square-wrapper').classList.add('wrapper-moveL');
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      // перемещение завершено, теперь надо удалить класс
+      square.classList.remove('square-animation');
+      document.querySelector('.square-wrapper').classList.remove('wrapper-moveL');
+    });
+  });
+  observer.observe(document.querySelector('.square-wrapper'));
