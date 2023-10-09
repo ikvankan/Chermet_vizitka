@@ -49,16 +49,20 @@
   height: 500px;
   background: #000;
 }
-.carousel-caption{
-  margin-bottom: 30%;
+#carousel-caption1{
+  margin-bottom: 30vw;
+  font-size: 3vw;
+  color: #dfbc71;
 }
-.carousel-control-prev,
-.carousel-control-next{
-  width: 4%;
+#control1{
+  width: 3vw;
+  background-size: cover;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon{
   border-radius: 50%;
+  height: 2vw;
+  width: 2vw;
   border: solid 5px #000000;
   background-color: #000000;
   
@@ -102,11 +106,7 @@
   justify-content: space-between;
   justify-content: space-around;
 }
-#carouselExampleControls{
-  position: relative;
-  width: 100%;
-  
-}
+
 body{
     margin: 0px;
     height: 100%;
@@ -526,10 +526,17 @@ html{
   position: relative;
   display: flex;
 }
-
+.historymark{
+  width: 100%;
+  height: 5vw;  
+  text-align: center;
+  color: #dfbc71;
+  font-size: 3vw;
+  background: linear-gradient(to left, #383333, #000000) ;
+}
 .history{
-  height: 50vw;
-  background: #dfbc71;
+  height: 56.25vw;
+  background: linear-gradient(to left, #383333, #000000) ;
 }
 .punktimark{
   width: 100%;
@@ -745,6 +752,18 @@ background-size: cover;
     width: 0;
     margin-left: 50%;
     height: 0.2vw ;
+    background: #dfbc71;
+  }
+  .line4{
+    width: 0;
+    margin-left: 50%;
+    height: 0.2vw ;
+    background: #dfbc71;
+  }
+  .line5{
+    width: 0;
+    margin-left: 50%;
+    height: 0.2vw ;
     background: #000000;
   }
   
@@ -780,4 +799,42 @@ hr{
     width: 100%;
     margin-left: 0;
   }
+}
+
+.map{
+  width: 64vw;
+  height: 38vw;
+  border: solid 3px #dfbc71;
+  border-radius: 3px;
+}
+
+#carousel2{
+  
+  
+}
+.carouseltextblock{
+  height: 20vw;
+  width: 50vw;
+  bottom: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 1vw;
+  color: #dfbc71;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  background:linear-gradient(to right,#0e0d0d,#2a2626);
+}
+#carousel-caption2{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  height: 30vw;
+  width: 50vw;
+}
+#carousel-item2{
+  position: relative;
+  
 }

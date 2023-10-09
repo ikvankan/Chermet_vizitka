@@ -115,13 +115,28 @@ setTimeout(() => {
       if (entry.isIntersecting) {
         document.querySelector('.line3').classList.add('animate_line2');
         
-      return; // если класс добавлен, продолжать уже не надо
+      return;
       }
       
     });
   });
   lineobserver3.observe(document.querySelector('.line3'));
 
+
+
+  const lineobserver4 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line4').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver4.observe(document.querySelector('.line4'));
 
 //scroll
   $(document).ready(function(){
@@ -134,4 +149,3 @@ setTimeout(() => {
             });
         });
     });
-    
