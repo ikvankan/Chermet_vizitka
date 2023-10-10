@@ -180,34 +180,6 @@ historyobserver.observe(document.getElementById('carousel2'));
   });
   lineobserver6.observe(document.querySelector('.line6'));
 
-  const lineobserver7 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      
-      
-      if (entry.isIntersecting) {
-        document.querySelector('.line7').classList.add('animate_line2');
-        
-      return; // если класс добавлен, продолжать уже не надо
-      }
-      
-    });
-  });
-  lineobserver7.observe(document.querySelector('.line7'));
-
-  const lineobserver8 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      
-      
-      if (entry.isIntersecting) {
-        document.querySelector('.line8').classList.add('animate_line2');
-        
-      return; // если класс добавлен, продолжать уже не надо
-      }
-      
-    });
-  });
-  lineobserver8.observe(document.querySelector('.line8'));
-
 },2700);
   }
 
