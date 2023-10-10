@@ -73,6 +73,21 @@ setTimeout(() => {
     });
   });
   observer2.observe(document.querySelector('.square-wrapper2'));
+//history animation
+const historyobserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    
+    
+    if (entry.isIntersecting) {
+
+      document.getElementById('carousel2').classList.add('aimatehistory');
+      
+    return; // если класс добавлен, продолжать уже не надо
+    }
+    
+  });
+});
+historyobserver.observe(document.getElementById('carousel2'));
 //line animations
 
 
@@ -137,6 +152,62 @@ setTimeout(() => {
     });
   });
   lineobserver4.observe(document.querySelector('.line4'));
+
+  const lineobserver5 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line5').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver5.observe(document.querySelector('.line5'));
+
+  const lineobserver6 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line6').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver6.observe(document.querySelector('.line6'));
+
+  const lineobserver7 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line7').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver7.observe(document.querySelector('.line7'));
+
+  const lineobserver8 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      
+      
+      if (entry.isIntersecting) {
+        document.querySelector('.line8').classList.add('animate_line2');
+        
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  lineobserver8.observe(document.querySelector('.line8'));
 
 //scroll
   $(document).ready(function(){
