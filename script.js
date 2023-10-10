@@ -43,9 +43,8 @@ setTimeout(() => {
   document.getElementById("block3").classList.add('animate_block')
   document.getElementById("img_block3").classList.add('ht');
 }, 3300);
-  }
-
-//jpg animations
+setTimeout(()=>{
+  //jpg animations
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const square = entry.target.querySelector('.square');
@@ -208,6 +207,10 @@ historyobserver.observe(document.getElementById('carousel2'));
     });
   });
   lineobserver8.observe(document.querySelector('.line8'));
+
+},3500);
+  }
+
 
 //scroll
   $(document).ready(function(){

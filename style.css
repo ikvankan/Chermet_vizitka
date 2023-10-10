@@ -834,7 +834,7 @@ hr{
 #carousel2{
   height: 80%;
   width: 80%;
-  
+  scale:0;
 }
 .aimatehistory{
   animation: historyspawn 3s ease 1;
