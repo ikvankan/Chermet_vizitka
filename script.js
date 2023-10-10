@@ -208,7 +208,7 @@ historyobserver.observe(document.getElementById('carousel2'));
   });
   lineobserver8.observe(document.querySelector('.line8'));
 
-},3500);
+},2700);
   }
 
 
