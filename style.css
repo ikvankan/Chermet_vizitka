@@ -540,6 +540,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .punktimark{
   width: 100%;
@@ -814,8 +815,6 @@ hr{
 #carousel2{
   height: 80%;
   width: 80%;
-  border: solid 3px #dfbc71;
-  border-radius: 3px;
   
 }
 .carouseltextblock{
@@ -857,9 +856,25 @@ hr{
 }
 #ccnext{
   width: 12%;
-  right: -10vw;
+  right: -9.9vw;
 }
 #ccprev{
   width: 12%;
-  left: -10vw;
+  left: -9.9vw;
+}
+.carousel-indicators{
+  width: 30vw;
+  left: 50%;
+  margin-left: 0;
+  margin-right: 0;
+  transform: translate(-50%);
+  align-items: center;
+  height: 2vw;
+  margin-bottom: 0;
+  }
+#carouselindicatorbuttton{
+  margin-right: .1vw;
+  margin-left: .1vw;
+  height: .2vw;
+  width: 2.3vw;
 }
