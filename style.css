@@ -639,13 +639,6 @@ background-size: cover;
   }
   
 }
-.square {
-  
-background: url("images\\1.jpg");
-border-radius: 8px;
-border: solid 3px #dfbc71;
-background-size: cover;
-}
 
 
 @keyframes wipe-enter {
@@ -920,10 +913,7 @@ hr{
   width: 2.3vw;
 }
 
-.stolovaya{
-  height: 50vw;
-  background: linear-gradient(to left, #383333, #000000) ;
-}
+
 
 .kontakti{
   height: 45vw;
@@ -974,4 +964,124 @@ hr{
   width: 96%;
   height: 96%;
 }
+.slogon{
+  font-family: 'jora';
+  text-align: center;
+  color: #dfbc71;
+  font-size: 3vw;
+  height: 5vw;
+}
+.stolovaya{
+  height: 200vw;
+  width: 100%;
+  background: linear-gradient(to left, #383333, #000000) ;
+}
+.aboutstolovaya {
+  height: 55vw;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to left, #383333, #000000) ;
+}
+.square3 {
+  height: 100%;
+  width: 100%;
+  animation: slide_stolovaya 15s linear infinite;
+  border-radius: 8px;
+  border: solid 3px #dfbc71;
+  background-size: cover;
+}
 
+  
+  
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0);
+      
+    }
+    100% {
+      transform: scale(1);
+      
+    }
+  }
+  .square-wrapper3{
+    width:40vw;
+    height: 22.5vw;
+    position: absolute;
+    right: -15vw;
+    scale: 0;
+    opacity: 0;
+    top: 3vw;
+  }
+  @font-face{
+    font-family: 'jora';
+    src: url('Pacifico-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'stolovayatext1';
+    src: url("BadScript-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'stolovayatext2';
+    src: url('Comfortaa-Light.ttf');
+  }
+
+.stolovayatext1{
+  font-size: 1.6vw;
+  color: white;
+  position: absolute;
+  top:3vw;
+  left:3vw;
+  height: 22.5vw;
+  width: 51vw;
+  font-family: 'stolovayatext1';
+}
+.stolovayatext2{
+  color: #ffffffbf;
+  font-size: 1vw;
+  position: absolute;
+  top: 28.5vw;
+  left:3vw;
+  height: 23.5vw;
+  width: 93vw;
+  font-family: 'stolovayatext2';
+}
+.menu{
+  height: 100vw;
+  width: 100%;
+  background: linear-gradient(to left, #383333, #000000) ;
+  position: relative;
+}
+
+@keyframes slide_stolovaya{
+  0%{
+    background: url("images\\stlovaya1.jpg");
+    background-size: cover;
+  
+  
+    
+  }
+  25%{
+    background: url("images\\stlovaya2.jpg");
+    background-size: cover;
+  
+  }
+  50%{
+    background: url("images\\stlovaya3.jpg");
+    background-size: cover;
+  
+  }
+  75%{
+    background: url("images\\stlovaya4.jpg");
+    background-size: cover;
+  
+  }
+  100%{
+    background: url("images\\stlovaya1.jpg");
+    background-size: cover;
+  
+  
+  
+  
+    
+  }
+}

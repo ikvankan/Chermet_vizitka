@@ -3,7 +3,11 @@ var images = [
   "images\\men_1.jpg",
   "images\\men_2.jpg",
   "images\\men_3.jpg",
-  "images\\men_4.jpg"
+  "images\\men_4.jpg",
+  "images\\stlovaya1.jpg",
+  "images\\stlovaya2.jpg",
+  "images\\stlovaya3.jpg",
+  "images\\stlovaya4.jpg"
 ];
 function loadImg(i){
   if(images[i] != undefined){
@@ -16,6 +20,7 @@ function loadImg(i){
   }
   if(images.length == i) // adding class 'loaded' when all images finished with loading
       document.getElementsByClassName("img_block")[0].classList.add("loaded");
+      document.getElementsByClassName("square3")[0].classList.add("loaded");
 }
 loadImg(0);
 window.onload = setTimeout(x,2700);
@@ -72,6 +77,22 @@ setTimeout(()=>{
     });
   });
   observer2.observe(document.querySelector('.square-wrapper2'));
+
+  
+
+  const observer3 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square3 = entry.target.querySelector('.square3');
+      
+      if (entry.isIntersecting) {
+        square3.classList.add('square-animation');
+        document.querySelector('.square-wrapper3').classList.add('wrapper-moveL');
+      return; // если класс добавлен, продолжать уже не надо
+      }
+      
+    });
+  });
+  observer3.observe(document.querySelector('.square-wrapper3'));
 //history animation
 const historyobserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
