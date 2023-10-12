@@ -1085,87 +1085,16 @@ hr{
   /* border-radius: 1vw; */
 }
 
-.zakuski_name{
-  font-family: 'jora';
-  text-align: center;
-  color: #dfbc71;
-  font-size: 1.7vw;
-  height: 3vw;
-}
 .simpleline{
   background: #dfbc71;
   height: .1vw;
   width: 100%;
 }
 
-.zakuski_pozicia{
-  margin-bottom: .2vw;
-  /* margin-top: .1vw; */
-  display: flex;
-  height: 1.636vw;
-  width: 100%;
-  font-size: 1.1vw;
-}
-.zakuski_poziciatag{
-  margin-bottom: .2vw;
-  /* margin-top: .1vw; */
-  display: flex;
-  height: 1.636vw;
-  width: 100%;
-  font-size: 1.1vw;
-}
-
-.zakuski_pozicia:hover{
-  transform: scale(1.025);
-  transition: .3s;
-}
-.zakuski_menu{
-  margin-top: 1vw;
-}
-.zakuski_pos_name{
-  width: 90%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: white;
-  font-size: 1.1vw;
-}
-.zakuski_pos_name b{
-  width: 90%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: white;
-  font-size: 1.1vw;
-  text-align: center;
-}
-.zakuski_pos_cost{
-  text-align: end;
-  /* margin-bottom: 3vw; */
-  width: 10%;
-  /* height: 1.636vw; */
-  font-family: 'cost';
-  color: #dfbc71;
-  font-weight: bold;
-  font-size: .8vw;
-}
-.zakuski_pos_cost b{
-  /* text-align: center; */
-  width: 10%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: #dfbc71;
-  font-weight: bold;
-  font-size: 1.1vw;
-}
 @font-face {
   font-family: 'cost';
   src: url('YujiHentaiganaAkari-Regular.ttf');
 }
-
-
-
-
-
-
 .supi{
   position: absolute;
   width: 40vw;
@@ -1176,80 +1105,6 @@ hr{
   /* border-radius: 1vw; */
 }
 
-.supi_name{
-  font-family: 'jora';
-  text-align: center;
-  color: #dfbc71;
-  font-size: 1.7vw;
-  height: 3vw;
-}
-
-
-.supi_pozicia{
-  margin-bottom: .2vw;
-  /* margin-top: .1vw; */
-  display: flex;
-  height: 1.636vw;
-  width: 100%;
-  font-size: 1.1vw;
-}
-.supi_poziciatag{
-  margin-bottom: .2vw;
-  /* margin-top: .1vw; */
-  display: flex;
-  height: 1.636vw;
-  width: 100%;
-  font-size: 1.1vw;
-}
-
-.supi_pozicia:hover{
-  transform: scale(1.025);
-  transition: .3s;
-}
-.supi_menu{
-  margin-top: 1vw;
-}
-.supi_pos_name{
-  width: 90%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: white;
-  font-size: 1.1vw;
-}
-.supi_pos_name b{
-  width: 90%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: white;
-  font-size: 1.1vw;
-  text-align: center;
-}
-.supi_pos_cost{
-  text-align: end;
-  /* margin-bottom: 3vw; */
-  width: 10%;
-  /* height: 1.636vw; */
-  font-family: 'cost';
-  color: #dfbc71;
-  font-weight: bold;
-  font-size: .8vw;
-}
-.supi_pos_cost b{
-  /* text-align: center; */
-  width: 10%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: #dfbc71;
-  font-weight: bold;
-  font-size: 1.1vw;
-}
-
-
-
-
-
-
-
 .hotfood{
   position: absolute;
   width: 40vw;
@@ -1259,84 +1114,6 @@ hr{
   /* border: solid .3vw #dfbc71; */
   /* border-radius: 1vw; */
 }
-
-.hotfood_name{
-  font-family: 'jora';
-  text-align: center;
-  color: #dfbc71;
-  font-size: 1.7vw;
-  height: 3vw;
-}
-
-
-.hotfood_pozicia{
-  margin-bottom: .2vw;
-  /* margin-top: .1vw; */
-  display: flex;
-  height: 1.636vw;
-  width: 100%;
-  font-size: 1.1vw;
-}
-.hotfood_poziciatag{
-  margin-bottom: .2vw;
-  /* margin-top: .1vw; */
-  display: flex;
-  height: 1.636vw;
-  width: 100%;
-  font-size: 1.1vw;
-}
-
-.hotfood_pozicia:hover{
-  transform: scale(1.025);
-  transition: .3s;
-}
-.hotfood_menu{
-  margin-top: 1vw;
-}
-.hotfood_pos_name{
-  width: 90%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: white;
-  font-size: 1.1vw;
-}
-.hotfood_pos_name b{
-  width: 90%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: white;
-  font-size: 1.1vw;
-  text-align: center;
-}
-.hotfood_pos_cost{
-  text-align: end;
-  /* margin-bottom: 3vw; */
-  width: 10%;
-  /* height: 1.636vw; */
-  font-family: 'cost';
-  color: #dfbc71;
-  font-weight: bold;
-  font-size: .8vw;
-}
-.hotfood_pos_cost b{
-  /* text-align: center; */
-  width: 10%;
-  height: 100%;
-  font-family: 'stolovayatext1';
-  color: #dfbc71;
-  font-weight: bold;
-  font-size: 1.1vw;
-}
-
-
-
-
-
-
-
-
-
-
 .sladkie{
   position: absolute;
   width: 40vw;
@@ -1346,8 +1123,36 @@ hr{
   /* border: solid .3vw #dfbc71; */
   /* border-radius: 1vw; */
 }
+.napitki{
+  position: absolute;
+  width: 40vw;
+  height: 13vw;
+  top: 67.7vw;
+  right: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
+.garnir{
+  position: absolute;
+  width: 40vw;
+  height: 15vw;
+  top: 53vw;
+  right: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
+.hleb{
+  position: absolute;
+  width: 40vw;
+  height: 28vw;
+  top: 53vw;
+  left: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
 
-.sladkie_name{
+.name{
+  /* scale: 1; */
   font-family: 'jora';
   text-align: center;
   color: #dfbc71;
@@ -1356,7 +1161,7 @@ hr{
 }
 
 
-.sladkie_pozicia{
+.pozicia{
   margin-bottom: .2vw;
   /* margin-top: .1vw; */
   display: flex;
@@ -1364,8 +1169,8 @@ hr{
   width: 100%;
   font-size: 1.1vw;
 }
-.sladkie_poziciatag{
-  margin-bottom: .2vw;
+.poziciatag{
+  margin-bottom: .9vw;
   /* margin-top: .1vw; */
   display: flex;
   height: 1.636vw;
@@ -1373,29 +1178,30 @@ hr{
   font-size: 1.1vw;
 }
 
-.sladkie_pozicia:hover{
+.pozicia:hover{
   transform: scale(1.025);
   transition: .3s;
 }
-.sladkie_menu{
+.pozicia_menu{
   margin-top: 1vw;
 }
-.sladkie_pos_name{
-  width: 90%;
+.pos_name{
+  width: 87.5%;
   height: 100%;
   font-family: 'stolovayatext1';
   color: white;
   font-size: 1.1vw;
 }
-.sladkie_pos_name b{
+.pos_name b{
   width: 90%;
   height: 100%;
   font-family: 'stolovayatext1';
   color: white;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
   text-align: center;
 }
-.sladkie_pos_cost{
+.pos_cost{
+  scale: 1.5;
   text-align: end;
   /* margin-bottom: 3vw; */
   width: 10%;
@@ -1405,7 +1211,8 @@ hr{
   font-weight: bold;
   font-size: .8vw;
 }
-.sladkie_pos_cost b{
+.pos_cost b{
+  /* scale: 0.5; */
   /* text-align: center; */
   width: 10%;
   height: 100%;
