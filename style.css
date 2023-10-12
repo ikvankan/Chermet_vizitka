@@ -1056,32 +1056,361 @@ hr{
   0%{
     background: url("images\\stlovaya1.jpg");
     background-size: cover;
-  
-  
-    
   }
   25%{
     background: url("images\\stlovaya2.jpg");
     background-size: cover;
-  
   }
   50%{
     background: url("images\\stlovaya3.jpg");
     background-size: cover;
-  
   }
   75%{
     background: url("images\\stlovaya4.jpg");
     background-size: cover;
-  
   }
   100%{
     background: url("images\\stlovaya1.jpg");
     background-size: cover;
-  
-  
-  
-  
-    
   }
+}
+
+.zakuski{
+  position: absolute;
+  width: 40vw;
+  height: 50vw;
+  top: 3vw;
+  left: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
+
+.zakuski_name{
+  font-family: 'jora';
+  text-align: center;
+  color: #dfbc71;
+  font-size: 1.7vw;
+  height: 3vw;
+}
+.simpleline{
+  background: #dfbc71;
+  height: .1vw;
+  width: 100%;
+}
+
+.zakuski_pozicia{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+.zakuski_poziciatag{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+
+.zakuski_pozicia:hover{
+  transform: scale(1.025);
+  transition: .3s;
+}
+.zakuski_menu{
+  margin-top: 1vw;
+}
+.zakuski_pos_name{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+}
+.zakuski_pos_name b{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+  text-align: center;
+}
+.zakuski_pos_cost{
+  text-align: end;
+  /* margin-bottom: 3vw; */
+  width: 10%;
+  /* height: 1.636vw; */
+  font-family: 'cost';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: .8vw;
+}
+.zakuski_pos_cost b{
+  /* text-align: center; */
+  width: 10%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+@font-face {
+  font-family: 'cost';
+  src: url('YujiHentaiganaAkari-Regular.ttf');
+}
+
+
+
+
+
+
+.supi{
+  position: absolute;
+  width: 40vw;
+  height: 12vw;
+  top: 3vw;
+  right: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
+
+.supi_name{
+  font-family: 'jora';
+  text-align: center;
+  color: #dfbc71;
+  font-size: 1.7vw;
+  height: 3vw;
+}
+
+
+.supi_pozicia{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+.supi_poziciatag{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+
+.supi_pozicia:hover{
+  transform: scale(1.025);
+  transition: .3s;
+}
+.supi_menu{
+  margin-top: 1vw;
+}
+.supi_pos_name{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+}
+.supi_pos_name b{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+  text-align: center;
+}
+.supi_pos_cost{
+  text-align: end;
+  /* margin-bottom: 3vw; */
+  width: 10%;
+  /* height: 1.636vw; */
+  font-family: 'cost';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: .8vw;
+}
+.supi_pos_cost b{
+  /* text-align: center; */
+  width: 10%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+
+
+
+
+
+
+.hotfood{
+  position: absolute;
+  width: 40vw;
+  height: 22vw;
+  top: 15.5vw;
+  right: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
+
+.hotfood_name{
+  font-family: 'jora';
+  text-align: center;
+  color: #dfbc71;
+  font-size: 1.7vw;
+  height: 3vw;
+}
+
+
+.hotfood_pozicia{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+.hotfood_poziciatag{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+
+.hotfood_pozicia:hover{
+  transform: scale(1.025);
+  transition: .3s;
+}
+.hotfood_menu{
+  margin-top: 1vw;
+}
+.hotfood_pos_name{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+}
+.hotfood_pos_name b{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+  text-align: center;
+}
+.hotfood_pos_cost{
+  text-align: end;
+  /* margin-bottom: 3vw; */
+  width: 10%;
+  /* height: 1.636vw; */
+  font-family: 'cost';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: .8vw;
+}
+.hotfood_pos_cost b{
+  /* text-align: center; */
+  width: 10%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+
+
+
+
+
+
+
+
+
+.sladkie{
+  position: absolute;
+  width: 40vw;
+  height: 15vw;
+  top: 38vw;
+  right: 3vw;
+  /* border: solid .3vw #dfbc71; */
+  /* border-radius: 1vw; */
+}
+
+.sladkie_name{
+  font-family: 'jora';
+  text-align: center;
+  color: #dfbc71;
+  font-size: 1.7vw;
+  height: 3vw;
+}
+
+
+.sladkie_pozicia{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+.sladkie_poziciatag{
+  margin-bottom: .2vw;
+  /* margin-top: .1vw; */
+  display: flex;
+  height: 1.636vw;
+  width: 100%;
+  font-size: 1.1vw;
+}
+
+.sladkie_pozicia:hover{
+  transform: scale(1.025);
+  transition: .3s;
+}
+.sladkie_menu{
+  margin-top: 1vw;
+}
+.sladkie_pos_name{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+}
+.sladkie_pos_name b{
+  width: 90%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: white;
+  font-size: 1.1vw;
+  text-align: center;
+}
+.sladkie_pos_cost{
+  text-align: end;
+  /* margin-bottom: 3vw; */
+  width: 10%;
+  /* height: 1.636vw; */
+  font-family: 'cost';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: .8vw;
+}
+.sladkie_pos_cost b{
+  /* text-align: center; */
+  width: 10%;
+  height: 100%;
+  font-family: 'stolovayatext1';
+  color: #dfbc71;
+  font-weight: bold;
+  font-size: 1.1vw;
 }
