@@ -7,7 +7,7 @@
     <title>Vizitka</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -348,7 +348,7 @@
         <div class="line4"></div>
         <div class="slogon">
             Меню
-            </div>
+        </div>
         <div class="menu" id="Menu">
             <div class="zakuski">
                 <div class="name">
@@ -997,15 +997,15 @@
                         </div>
                     </div>
                     <div class="pozicia">
-                        <div class="pos_name">
+                        <div class="pos_name" data-id="napitok">
                             НАПИТОК ИЗ ПЛОДОВ ШИПОВНИКА
                         </div>
                         <div class="pos_cost">
                             0,70p
                         </div>
                     </div>
-                    <div class="pozicia">
-                        <div class="pos_name">
+                    <div class="pozicia" >
+                        <div class="pos_name" data-id="kefir">
                             КЕФИР
                         </div>
                         <div class="pos_cost">
@@ -1018,12 +1018,37 @@
 
 
         </div>
+
+
+
+        <div class="line5"></div>
+        <div class="slogon">
+            Заказ
+        </div>
+        <div class="zakaz" id="zakaz">
+
+        </div>
+
+
+
+
+
+
+
+        <div class="line6"></div>
+        <div class="slogon">
+            Бронирование
+        </div>
+        <div class="bron">
+
+        </div>
+
     </div>
     <!-- пункты приемки -->
     <div class="punktimark" id="puk">
         Пункты приёмки лома на карте
     </div>
-    <div class="line5"></div>
+    <div class="line7"></div>
     <div class="punkti">
         <div class="map">
             <script type="text/javascript" charset="utf-8"  async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A660657156ca9060df6d2268bd13c908b4559083ed61ee99e4841683a4819582f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
@@ -1034,7 +1059,7 @@
     <div class="kontaktimark" id="kon">
         Контакты
     </div>
-    <div class="line6"></div>
+    <div class="line8"></div>
     <div class="kontakti">
         <div class="kontakt">
             <div class="textcontainer">
@@ -1230,12 +1255,13 @@
     </div>
     
 <!-- футер -->
-    <div class="line7"></div>
+    <div class="line9"></div>
     <div class="footer" id="podval">
         подвал да да
     </div>
     <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="storage.js"></script>
 </body>
 
 </html>

@@ -782,6 +782,12 @@ background-size: cover;
     height: 0.2vw ;
     background: #dfbc71;
   }
+  .line9{
+    width: 0;
+    margin-left: 50%;
+    height: 0.2vw ;
+    background: #dfbc71;
+  }
   
   .name_block_onas{
     width: 100%;
@@ -972,9 +978,9 @@ hr{
   height: 5vw;
 }
 .stolovaya{
-  height: 200vw;
+  height: 300vw;
   width: 100%;
-  background: linear-gradient(to left, #383333, #000000) ;
+  background: linear-gradient(to left, #383333, #000000);
 }
 .aboutstolovaya {
   height: 55vw;
@@ -1046,9 +1052,10 @@ hr{
   font-family: 'stolovayatext2';
 }
 .menu{
-  height: 100vw;
+  /* border: solid 1px white; */
+  height: 85vw;
   width: 100%;
-  background: linear-gradient(to left, #383333, #000000) ;
+  background: linear-gradient(to left, #383333, #000000);
   position: relative;
 }
 
@@ -1220,4 +1227,19 @@ hr{
   color: #dfbc71;
   font-weight: bold;
   font-size: 1.1vw;
+}
+
+
+
+.zakaz{
+  
+  /* border: solid 1px white; */
+  height: 85vw;
+  width: 100%;
+  background: linear-gradient(to left, #383333, #000000);
+  position: relative;
+  
+}
+.stroka{
+  border: solid 1px white;
 }
