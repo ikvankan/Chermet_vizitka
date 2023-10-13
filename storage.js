@@ -94,3 +94,20 @@ const renderCart = () =>{
     console.log(cart);
 }
 renderCart();
+
+function send(){
+    let data = JSON.stringify(cart);
+
+// Создание нового объекта XMLHttpRequest
+let xhr = new XMLHttpRequest();
+
+// Открытие нового POST-запроса
+xhr.open('POST', 'process.php', true);
+
+// Установка заголовка Content-Type
+xhr.setRequestHeader('Content-Type', 'application/json');
+
+// Отправка данных
+xhr.send(data);
+}
+
