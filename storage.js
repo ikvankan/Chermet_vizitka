@@ -174,18 +174,14 @@ const renderCart = () =>{
 renderCart();
 
 function send(){
-    let data = JSON.stringify(cart);
+    let email = document.getElementById('email').value;
+    let name = document.getElementById('name').value;
+    let data = JSON.stringify({cart: cart, email: email, name: name});
+    let xhr = new XMLHttpRequest();
 
-// Создание нового объекта XMLHttpRequest
-let xhr = new XMLHttpRequest();
+    xhr.open('POST', 'process.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
 
-// Открытие нового POST-запроса
-xhr.open('POST', 'process.php', true);
-
-// Установка заголовка Content-Type
-xhr.setRequestHeader('Content-Type', 'application/json');
-
-// Отправка данных
-xhr.send(data);
+    xhr.send(data);
 }
 
