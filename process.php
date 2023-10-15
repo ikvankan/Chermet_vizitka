@@ -9,7 +9,7 @@ $message = '';
 $message2 = '';
 $totalCost = 0;
 if (!isset($_SESSION['orderNumber'])) {
-    $_SESSION['orderNumber'] = 0; // Инициализируем номер заказа, если он еще не установлен
+    $_SESSION['orderNumber'] = 0; 
 }
 
 $orderNumber = ++$_SESSION['orderNumber']; 
