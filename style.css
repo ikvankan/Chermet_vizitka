@@ -1232,14 +1232,23 @@ hr{
 
 
 .zakaz{
-  
+  display: flex;
   /* border: solid 1px white; */
-  height: 85vw;
+  height: 30vw;
   width: 100%;
   background: linear-gradient(to left, #383333, #000000);
   position: relative;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
 }
 .stroka{
   border: solid 1px white;
+}
+.itog{
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+  font-size: 3vw;
 }
