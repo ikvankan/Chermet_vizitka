@@ -100,22 +100,14 @@ const delFunction = id =>{
 const renderCart = () =>{
     
     function displayObject(obj) {
-        // Очистка содержимого body
         document.getElementById('zakaz').innerHTML = '';
-        
         for (let key in obj) {
-
-            
-
-            
-
             let div = document.createElement('div');
             div.className='stroka';
             div.style.display = 'flex';
             div.style.height = '4vw';
             div.style.width = '25vw';
-            
-            // Создание нового элемента p
+
             let p = document.createElement('p');
             p.style.width= '19vw';
             p.style.color= "white";
@@ -123,16 +115,13 @@ const renderCart = () =>{
             p.style.height = '3vw';
             let cost = obj[key].price*obj[key].quantity;
             p.textContent = `${obj[key].Name}: ${obj[key].quantity}шт. Цена: ${cost.toFixed(2)}р`;
-    
-            // Создание новой кнопки
+
             let buttonplus = document.createElement('button');
             buttonplus.style.height = '3vw';
             buttonplus.style.width = '3vw';
             buttonplus.textContent = '+';
             buttonplus.className = 'plus'
             buttonplus.dataset.id = key;
-
-            
 
             let buttonminus = document.createElement('button');
             buttonminus.style.height = '3vw';
@@ -144,30 +133,22 @@ const renderCart = () =>{
             div.appendChild(p);
             div.appendChild(buttonplus);
             div.appendChild(buttonminus);
-            // Добавление элемента p и кнопки в body
+            
             document.getElementById('zakaz').appendChild(div);
-            
-            
-            
         }
         let totalCost = 0;
         for(let key in obj){
-            
             let quantity = obj[key].quantity;
             let price = obj[key].price;
             let cost = quantity * price;
             totalCost += cost;
-            
         }
         console.log(totalCost);
         let itog = document.createElement('div');
         itog.className='itog';
         itog.textContent = `Цена заказа: ${totalCost.toFixed(2)}р`;
         document.getElementById('zakaz').appendChild(itog);
-
     }
-    
-    // Вызов функции
     displayObject(cart);
     console.log(cart);
 }
@@ -178,10 +159,8 @@ function send(){
     let name = document.getElementById('name').value;
     let data = JSON.stringify({cart: cart, email: email, name: name});
     let xhr = new XMLHttpRequest();
-
     xhr.open('POST', 'process.php', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
-
     xhr.send(data);
 }
 
