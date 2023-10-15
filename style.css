@@ -858,12 +858,12 @@ hr{
 }
 
 .carouseltextblock{
-  height: 15vw;
-  width: 45vw;
+  height: 16vw;
+  width: 55vw;
   bottom: 0;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
-  font-size: 1vw;
+  /* font-size: 0.7vw; */
   color: #ffffff;
   left: 50%;
   border-top: solid .3vw #dfbc71;
@@ -1198,6 +1198,12 @@ hr{
   font-family: 'stolovayatext1';
   color: white;
   font-size: 1.1vw;
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .pos_name b{
   width: 90%;
@@ -1206,6 +1212,12 @@ hr{
   color: white;
   font-size: 1.5vw;
   text-align: center;
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .pos_cost{
   scale: 1.5;
@@ -1217,6 +1229,12 @@ hr{
   color: #dfbc71;
   font-weight: bold;
   font-size: .8vw;
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .pos_cost b{
   /* scale: 0.5; */
@@ -1227,6 +1245,12 @@ hr{
   color: #dfbc71;
   font-weight: bold;
   font-size: 1.1vw;
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 
@@ -1251,4 +1275,37 @@ hr{
   position: absolute;
   color: #ffffff;
   font-size: 3vw;
+}
+
+
+#ct1{font-size: 1.3vw;}
+#ct2{
+  font-size: 1.2vw;
+}
+#ct3{
+  font-size: 1vw;
+}
+#ct4{
+  font-size: 0.87vw;
+}
+#ct5{
+  font-size: 0.93vw;
+}
+#ct6{
+  font-size: 0.75vw;
+}
+#ct7{
+  font-size: 0.82vw;
+}
+#ct8{
+  font-size: 0.82vw;
+}
+#ct9{
+  font-size: 0.7vw;
+}
+#ct10{
+  font-size: 0.93vw;
+}
+#ct11{
+  font-size: 1.2vw;
 }
